@@ -43,6 +43,32 @@ footer{
 }
 
 
+#galeria {
+    display: flex;
+    width: 100%;
+    max-width: 320px; /* Ajusta el tamaño máximo */
+    height: 430px;
+    margin: 20px auto; /* Centra la galería horizontalmente */
+    overflow: hidden;
+    border-radius: 28px;
+}
+
+.galeria img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: width 0.5s ease, opacity 0.5s ease, filter 0.5s ease;
+}
+
+.galeria img:hover {
+    cursor: crosshair;
+    width: 100px; /* Tamaño expandido al pasar el cursor */
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
 
 
 
