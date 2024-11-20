@@ -1,11 +1,12 @@
-// Manejador del formulario
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita el envío real del formulario
+document.addEventListener("DOMContentLoaded", () => {
+    const formulario = document.getElementById('form');
+    
+    formulario.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
 
-    // Mostrar el mensaje de confirmación
-    const confirmation = document.getElementById('confirmation');
-    confirmation.classList.remove('hidden');
+        alert("LISTO! Mensaje enviado.!");
 
-    // Limpiar los campos del formulario
-    this.reset();
+        formulario.submit();
+    });
 });

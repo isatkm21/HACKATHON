@@ -363,6 +363,13 @@ select:hover{
     border: 2px solid #000;
 }
 
+form label, form input, form select { 
+    display: block; 
+    margin-bottom: 10px;
+}
+
+
+
 
 @media (width >=500px) {
     body{
