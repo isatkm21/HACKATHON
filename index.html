@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donathon</title>
+    <link rel="shortcut icon" href="logo_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="circle"></div>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="#sobre-nosotros" class="nav-link">Sobre Nosotros</a></li>
+            <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+            <li class="nav-item"><a href="donar.html" class="nav-link">Donar</a></li>
+            <li class="nav-item"><a href="empresas.html" class="nav-link">Empresas</a></li>
+        </ul>
+    </nav>
+    
+    <div class="content">
+        <section id="inicio" class="card">
+            <h1>Bienvenido a Nuestra Página</h1>
+            <p>Esta es la sección de inicio.</p>
+        </section>
+
+        <section id="contacto" class="card">
+            <h1>Contacto</h1>
+            <form id="form" class="form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+
+                <label for="email">Correo:</label>
+                <input class="input" type="email" id="email" name="email" placeholder="Escribe tu correo" required>
+
+                <label for="message">Comentario:</label>
+                <textarea id="message" name="message" placeholder="Escribe tu mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="confirmation" class="hidden">Mensaje enviado. Te responderemos pronto.</p>
+
+            <script src="formularioContacto.js"></script>
+        </section>
+
+        <section id="sobre-nosotros" class="card">
+            <h2>Sobre Nosotros</h2>
+            <p>Información sobre nosotros aquí.</p>
+        </section>
+    </div>
+</body>
+</html>
