@@ -4,30 +4,41 @@ document.addEventListener("DOMContentLoaded", () => {
     const empresaSection = document.getElementById("empresa-section");
     const anonimoSection = document.getElementById("anonimo-section");
 
+    function updateRequiredAttributes(section, add) {
+        const inputs = section.querySelectorAll('input, select');
+        inputs.forEach(input => {
+            if (add) {
+                input.setAttribute("required", "required");
+            } else {
+                input.removeAttribute("required");
+            }
+        });
+    }
+
     tipoDonante.addEventListener("change", (e) => {
         personaSection.classList.add("hidden");
-        personaSection.classList.remove("form");
         empresaSection.classList.add("hidden");
-        empresaSection.classList.remove("form");
         anonimoSection.classList.add("hidden");
-        anonimoSection.classList.remove("form");
+
+        updateRequiredAttributes(personaSection, false);
+        updateRequiredAttributes(empresaSection, false);
+        updateRequiredAttributes(anonimoSection, false);
 
         const selectedValue = e.target.value;
         let targetSection = null;
         if (selectedValue === "persona") {
             personaSection.classList.remove("hidden");
-            personaSection.classList.add("form");
             targetSection = personaSection;
         } else if (selectedValue === "empresa") {
             empresaSection.classList.remove("hidden");
-            empresaSection.classList.add("form");
             targetSection = empresaSection;
         } else if (selectedValue === "anonimo") {
             anonimoSection.classList.remove("hidden");
-            anonimoSection.classList.add("form");
             targetSection = anonimoSection;
         }
+
         if (targetSection) {
+            updateRequiredAttributes(targetSection, true);
             targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
         }
     });

@@ -130,9 +130,26 @@ body {
     padding-top: 60px;
 }
 
+.content2 {
+    display: flex;
+    margin: 10px;
+    flex-direction:row;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.content2 .card {
+    width: 48%;
+    margin-bottom: 20px; 
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) { .content2 { flex-direction: column; align-items: center; } .content2 .card { width: 90%; /} } @media (min-width: 769px) and (max-width: 1024px) { .content2 { flex-direction: row; flex-wrap: wrap; justify-content: space-around; } .content2 .card { width: 38%;  } }
+
 .content .card {
     margin-bottom: 20px; 
     margin-left: 20px;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
