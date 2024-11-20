@@ -22,52 +22,58 @@
     <div class="content">
         <section class="card">
             <h1>Donaciones</h1>
-
+    
             <form id="donaciones-form" class="form">
-                <label for="tipo-donante">Tipo de Donante: </label>
-                <select name="tipo-donante" id="tipo-donante" required>
-                    <option value="" disabled selected> Selecciona una opción</option>
+                <label for="tipo-donante">Tipo de Donante:</label>
+                <select id="tipo-donante" name="tipo-donante" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
                     <option value="persona">Persona</option>
                     <option value="empresa">Empresa</option>
                     <option value="anonimo">Anónimo</option>
                 </select>
-
+    
                 <div id="persona-section" class="hidden">
-                    <h3>Donación como persona</h3>
+                    <h3>Donación como Persona</h3>
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo">
-                    <label for="tipo-id">Tipo de identificación</label>
-                    <select name="tipo-id" id="tipo-id">
+    
+                    <label for="tipo-id">Tipo de Identificación:</label>
+                    <select id="tipo-id" name="tipo-id">
                         <option value="cc">Cédula de Ciudadanía</option>
                         <option value="ce">Cédula de Extranjería</option>
-                        <option value="ps">Pasaporte</option>
+                        <option value="pasaporte">Pasaporte</option>
                     </select>
+    
                     <label for="numero-id">Número de Identificación:</label>
                     <input type="text" id="numero-id" name="numero-id" placeholder="Escribe tu número de identificación">
+    
                     <label for="monto-persona">Monto a Donar:</label>
                     <input type="number" id="monto-persona" name="monto-persona" placeholder="Escribe el monto">
                 </div>
-
-                <div id="empresa-sectiom" class="hidden">
+    
+                <div id="empresa-section" class="hidden">
                     <h3>Donación como Empresa</h3>
-                    <label for="nombre-empresa">Nombre de la Empresa</label>
-                    <input type="text" name="representante" id="representante" placeholder="Escribe el nombre de tu empresa">
-                    <label for="representante">Representate</label>
-                    <input type="text" name="representante" id="representante" placeholder="Nombre del representante legal">
-                    <label for="monto-empresa">Monto a Donar</label>
-                    <input type="number" id="monto-empresa" name="monto-empresa" placeholder="Escribe el monto a donar">
+                    <label for="nombre-empresa">Nombre de la Empresa:</label>
+                    <input type="text" id="nombre-empresa" name="nombre-empresa" placeholder="Escribe el nombre de tu empresa">
+    
+                    <label for="representante">Representante:</label>
+                    <input type="text" id="representante" name="representante" placeholder="Nombre del representante legal">
+    
+                    <label for="monto-empresa">Monto a Donar:</label>
+                    <input type="number" id="monto-empresa" name="monto-empresa" placeholder="Escribe el monto">
                 </div>
-
+    
                 <div id="anonimo-section" class="hidden">
-                    <h3>Donanción Anónima</h3>
-                    <label for="monto-anonimo">Monto a Donar</label>
-                    <input type="number" id="monto-anonimo" name="monto-anonimo" placeholder="Escribe el monto a donar">
+                    <h3>Donación Anónima</h3>
+                    <label for="monto-anonimo">Monto a Donar:</label>
+                    <input type="number" id="monto-anonimo" name="monto-anonimo" placeholder="Escribe el monto">
                 </div>
-
-                <button type="submit">Donar!</button>
+    
+                <button type="submit">Donar</button>
             </form>
         </section>
     </div>
+    
 
     <script src="donaciones.js"></script>
     
