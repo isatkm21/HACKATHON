@@ -7,6 +7,37 @@ html{
     height: 100%;
 }
 
+/* Mi css isa */
+
+.hidden {
+    display: none;
+}
+
+.form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.form input, .form select, .form button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form button {
+    background-color:  #216ce7;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color:  #216ce7;
+}
+
+
 /* Resto de tu CSS... */
 
 body {
