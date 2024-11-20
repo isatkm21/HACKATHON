@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,47 @@
     <link rel="shortcut icon" href="logo_favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="circle"></div>
     <nav class="navbar">
         <ul class="nav-list">
-            <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
-            <li class="nav-item"><a href="#sobre-nosotros" class="nav-link">Sobre Nosotros</a></li>
-            <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+            <li class="nav-item"><a href="index.html#inicio" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="index.html#sobre-nosotros" class="nav-link">Sobre Nosotros</a></li>
+            <li class="nav-item"><a href="index.html#contacto" class="nav-link">Contacto</a></li>
             <li class="nav-item"><a href="donar.html" class="nav-link">Donar</a></li>
-            <li class="nav-item"><a href="empresas.html" class="nav-link">Empresas</a></li>
+            <li class="nav-item"><a href="orga.html" class="nav-link">Organizaciones</a></li>
         </ul>
     </nav>
-    
+
     <div class="content">
+        
+
+        
+
         <section id="inicio" class="card">
-            <h1>Bienvenido a Nuestra Página</h1>
-            <p>Esta es la sección de inicio.</p>
+            <img src="logo_blue.png" width="100px" alt="Logo azul">
+            <h1>Bienvenido a Donathon</h1>
+            <p>Te presentamos <strong>Donathon</strong>.</p>
+            <p>Es una plataforma segura y
+                <span class="azul-bold">
+                    confiable
+                </span>
+                donde las personas pueden <span class="azul2-bold">donar dinero</span> a caridades de manera noble y sincera,
+                conectando a <span class="azul-bold">donantes</span> con <span class="azul2-bold">empresas</span> para apoyar causas significativas.
+            </p>
+            <form action="donar.html"> <button type="submit" class="button">Ir a Donar</button> </form>
+        </section>
+
+        <section id="sobre-nosotros" class="card">
+            <h1>Sobre Nosotros</h1>
+            <p class="leftalign">Una breve descripción de quienes somos y la causa de esta plataforma.</p>
+            <h1 class="h1peq">¿Quienes Somos?</h1>
+            <p class="leftalign">Somos <span class="azul-bold">Isabella Manjarres</span>, <span class="azul2-bold">Brayan De Avila</span>, <span class="azul-bold">Kevin Perea</span> y <span class="azul2-bold">Frell Beleño</span>, un grupo de estudiantes de la <span class="upc">Universidad Popular del Cesar</span>.</p>
+
+            <h1 class="h1peq">¿Cual es nuestro propósito?</h1>
+            <p class="leftalign">Creamos <span class="azul-bold">Donathon</span> con el objetivo de crear un puente seguro y confiable para las personas que quieren colocar su mano en el corazón y hacer un acto caritativo y benéfico, conectándolos con empresas que gestionan obras benéficas pero necesitan los recursos, recursos que los usuarios pueden aportar monetariamente.</p>
+
         </section>
 
         <section id="contacto" class="card">
@@ -39,15 +65,19 @@
 
                 <button type="submit">Enviar</button>
             </form>
-            <p id="confirmation" class="hidden">Mensaje enviado. Te responderemos pronto.</p>
 
             <script src="formularioContacto.js"></script>
         </section>
 
-        <section id="sobre-nosotros" class="card">
-            <h2>Sobre Nosotros</h2>
-            <p>Información sobre nosotros aquí.</p>
-        </section>
     </div>
+
+    <footer>
+        <div>
+            <p>&copy; 2024 Donathon. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
 </body>
+
+
 </html>
