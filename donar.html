@@ -34,7 +34,7 @@
     
                 <div id="persona-section" class="hidden">
                     <h3>Donación como Persona</h3>
-                    <label for="nombre">Nombre:</label>
+                    <label for="nombre">Nombres y Apellidos:</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo">
     
                     <label for="tipo-id">Tipo de Identificación:</label>
@@ -68,6 +68,15 @@
                     <label for="monto-anonimo">Monto a Donar:</label>
                     <input type="number" id="monto-anonimo" name="monto-anonimo" placeholder="Escribe el monto">
                 </div>
+
+                <label for="org">Organizaciones</label>
+                    <select id="org" name="org">
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="org1">UWW (United Way Worldwide)</option>
+                        <option value="org2">Direct Relief</option>
+                        <option value="org3">UNICEF</option>
+                        <option value="org4">Cruz Roja</option>
+                    </select>
     
                 <button type="submit">Donar</button>
             </form>
