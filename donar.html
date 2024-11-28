@@ -6,8 +6,6 @@
     <title>Donathon</title>
     <link rel="shortcut icon" href="logo_favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script src="pdf.js"></script>
-    <script src="jspdf.umd.min.js"></script>
 </head>
 <body>
     <div class="circle"></div>
@@ -24,8 +22,8 @@
     <div class="content">
         <section class="card">
             <h1>Donaciones</h1>
-            
-            <form action="gracias.html" id="donaciones-form" class="form">
+    
+            <form id="donaciones-form" class="form">
                 <label for="tipo-donante">Tipo de Donante:</label>
                 <select id="tipo-donante" name="tipo-donante" required>
                     <option value="" disabled selected>Selecciona una opción</option>
@@ -36,8 +34,8 @@
     
                 <div id="persona-section" class="hidden">
                     <h3>Donación como Persona</h3>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                    <label for="nombre">Nombres y Apellidos:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo">
     
                     <label for="tipo-id">Tipo de Identificación:</label>
                     <select id="tipo-id" name="tipo-id">
@@ -47,33 +45,31 @@
                     </select>
     
                     <label for="numero-id">Número de Identificación:</label>
-                    <input type="text" id="numero-id" name="numero -id" placeholder="Escribe tu número de identificación" required>
+                    <input type="text" id="numero-id" name="numero-id" placeholder="Escribe tu número de identificación">
     
                     <label for="monto-persona">Monto a Donar:</label>
-                    <input type="number" id="monto-persona" name="monto-persona" placeholder="Escribe el monto" required>
+                    <input type="number" id="monto-persona" name="monto-persona" placeholder="Escribe el monto">
                 </div>
     
                 <div id="empresa-section" class="hidden">
                     <h3>Donación como Empresa</h3>
                     <label for="nombre-empresa">Nombre de la Empresa:</label>
-                    <input type="text" id="nombre-empresa" name="nombre-empresa" placeholder="Escribe el nombre de tu empresa" required>
+                    <input type="text" id="nombre-empresa" name="nombre-empresa" placeholder="Escribe el nombre de tu empresa">
     
                     <label for="representante">Representante:</label>
-                    <input type="text" id="representante" name="representante" placeholder="Nombre del representante legal" required>
+                    <input type="text" id="representante" name="representante" placeholder="Nombre del representante legal">
     
                     <label for="monto-empresa">Monto a Donar:</label>
-                    <input type="number" id="monto-empresa" name="monto-empresa" placeholder="Escribe el monto" required>
-            
+                    <input type="number" id="monto-empresa" name="monto-empresa" placeholder="Escribe el monto">
                 </div>
     
                 <div id="anonimo-section" class="hidden">
                     <h3>Donación Anónima</h3>
                     <label for="monto-anonimo">Monto a Donar:</label>
-                    <input type="number" id="monto-anonimo" name="monto-anonimo" placeholder="Escribe el monto" required>
-                
+                    <input type="number" id="monto-anonimo" name="monto-anonimo" placeholder="Escribe el monto">
                 </div>
 
-                <label for="org">Donar a la organizacion:</label>
+                <label for="org">Organizaciones</label>
                     <select id="org" name="org">
                         <option value="" disabled selected>Selecciona una opción</option>
                         <option value="org1">UWW (United Way Worldwide)</option>
@@ -86,9 +82,7 @@
             </form>
         </section>
     </div>
-    
 
     <script src="donaciones.js"></script>
-    
 </body>
 </html>
